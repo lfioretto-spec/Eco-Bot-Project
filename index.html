@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBot - Entre Todos Podemos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="header">
+    <div class="logo">🌱 EcoBot</div>
+    <nav class="nav">
+      <a href="#problem">Problemática</a>
+      <a href="#solution">Solución</a>
+      <a href="#materials">Materiales</a>
+      <a href="#guide">Instructivo</a>
+      <a href="#about">Quiénes Somos</a>
+    </nav>
+  </header>
+
+  <!-- Portada / Hero -->
+  <section class="hero">
+    <h1>Entre Todos Podemos Cuidar el Planeta</h1>
+    <p>Conocé el <strong>EcoBot</strong>, un dispositivo inteligente desarrollado con Micro:bit para reducir el consumo innecesario de energía en nuestros hogares.</p>
+    <a href="#guide" class="btn-cta">Ver Instructivo de Armado</a>
+  </section>
+
+  <!-- Sección Concientización -->
+  <section id="problem" class="section">
+    <h2>Transición Energética y Concientización</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>El Desafío</h3>
+        <p>Muchas personas quieren cuidar el medio ambiente pero se sienten abrumadas por la terminología o costos. Con pequeñas acciones cotidianas en casa podemos reducir el impacto ambiental y ahorrar energía.</p>
+      </div>
+      <div class="card">
+        <h3>Transición Energética</h3>
+        <p>Pasar de fuentes de energía fósiles a renovables requiere la participación activa de los ciudadanos. Controlar las luces encendidas innecesariamente es un gran primer paso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Solución / EcoBot -->
+  <section id="solution" class="section bg-light">
+    <h2>Nuestra Solución: El EcoBot</h2>
+    <p>El EcoBot monitorea el nivel de iluminación del hogar mediante una placa BBC Micro:bit para evitar el desperdicio energético.</p>
+    <ul>
+      <li><strong>Detección activa:</strong> Si detecta luz encendida por más de 2 horas continuas, activa una alerta visual (LED) y sonora (buzzer).</li>
+      <li><strong>Control simple:</strong> Se puede desactivar la alarma aplaudiendo dos veces.</li>
+      <li><strong>Ahorro automático:</strong> Si nadie responde en 5 minutos, la alarma se apaga sola para no gastar energía.</li>
+    </ul>
+  </section>
+
+  <!-- Componentes y Materiales -->
+  <section id="materials" class="section">
+    <h2>Componentes Electrónicos</h2>
+    <div class="card-grid">
+      <div class="card">🔌 Placa BBC Micro:bit (con sensor de luz y micrófono integrados)</div>
+      <div class="card">⚡ Placa de pruebas (Protoboard) con adaptador de pines</div>
+      <div class="card">💡 Diodo LED de aviso visual</div>
+      <div class="card">🔊 Buzzer (parlante) para alerta sonora</div>
+      <div class="card">🔋 Resistencias para regulación de energía y Cables jumpers</div>
+    </div>
+  </section>
+
+  <!-- Instructivo de Armado -->
+  <section id="guide" class="section bg-light">
+    <h2>Instructivo de Armado Paso a Paso</h2>
+    <ol class="steps">
+      <li><strong>Ensamblar el circuito:</strong> Conectá la Micro:bit a la protoboard. Vinculá el LED al pin P1 (con su resistencia) y el buzzer al pin P2 mediante los cables jumpers.</li>
+      <li><strong>Programar la Micro:bit:</strong> En MakeCode, configurá el sensor para medir luz continua por 2 horas y activar la alarma sonora y visual.</li>
+      <li><strong>Configurar la interacción:</strong> Activá el micrófono para apagar la alarma con 2 aplausos o mediante el temporizador automático de 5 minutos.</li>
+    </ol>
+    <p><a href="https://makecode.microbit.org/S70359-42492-08470-91107" target="_blank" class="btn-link">🔗 Ver Código interactivo en MakeCode</a></p>
+  </section>
+
+  <!-- Quiénes Somos -->
+  <section id="about" class="section">
+    <h2>Quiénes Somos</h2>
+    <p>Somos alumnas del Nivel Medio del <strong>Colegio Fasta San Vicente de Paúl</strong> (Devoto). Proyecto integrador desarrollado para la materia TICs.</p>
+  </section>
+
+  <!-- Pie de página / Footer -->
+  <footer>
+    <p>&copy; 2026 Entre Todos Podemos - Colegio Fasta San Vicente de Paúl</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
